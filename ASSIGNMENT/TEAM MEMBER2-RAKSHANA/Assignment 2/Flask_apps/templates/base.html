@@ -1,0 +1,23 @@
+<title>
+    {%block title %}
+
+    {% endblock %}
+
+</title>
+
+<div>
+    <a href="{{ url_for ('login')}}">Login</a>
+</div>
+
+<div>
+    <a href="{{ url_for('register')}}">Register </a>
+</div>
+
+<body>
+
+    {% block content%} 
+
+    {% endblock%} 
+
+
+</body>
