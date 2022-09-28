@@ -1,0 +1,17 @@
+{% extends 'base.html %'} 
+
+{% block title%} 
+
+Market Page
+
+{% endblock %} 
+
+{% block content %} 
+
+<form action="http://localhost:5000/login" method="POST">
+    <p>Username: <input type="text" name="username"/></p>
+    <p>Password: <input type="password1" name="password"/></p>
+    <p><input type="submit" value="submit"/></p>
+</form>
+
+{% endblock %}
