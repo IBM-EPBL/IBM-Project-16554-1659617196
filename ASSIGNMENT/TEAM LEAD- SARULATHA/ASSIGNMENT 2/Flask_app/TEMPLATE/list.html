@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=YppnqwHSBHEEYkS1Nm8itzCV0vXPOyEmbLLupRTUadQcyNG5zkK8iFeK2PkOKgDMwuc62fup5C8JvwLujwrLKMEue8hjtWVuyna9S2UaZJIp96rgXcccpMwO2c_aGGx7nMJZX21FGlx-dnqasvXgVF2fMKl9Ydlmv4D2M8DSlrZCNWzeq9IYBg1nDGn0qcAL_KeQwRUezt2MCIhC_KOJxK1RPI0xtlxRpKOLNzva_nBW-_b5bpFL6Joh8RT6OlPLh4VGum6oocYw4t-qJqpLMqRoSEuaQUvTvWanDUL0QrQhEF_-F_XLEc6eQd_lIipI2mU3RFek_Jc2r4acJFtRbRJf_0XUzX15L7J-vLqLFnqmaDt1lIfoLt8KtgcMP3vmUAf0bjszHV-I0N7sedwalL6-4OYlbRACCSRVuZKeeArsatZ2CTAT6DwonTiva4_JA9PXZUVTVSV3Ebu0AqPvePVVwHipCx08qJh4FxRrl10NTzF7BVrJF4ONL7mkeeRjp_DGtlMJ_A_5qZuPYa_Sp6BVrYw2pz5LOFkmP4MKXh1ViWB2ZLX2n6JGwyUZc7i_IaKADr5Ka4zIdwPwrW4BRS0-krL_Vb2nwRpwQPe4E3tKUHksS9Sf2tRIHrGdD28rkd_-VLmXRH2jprV8DHV36Mvcjrh1wLitPwHolGoVnczYwEG2SFsxXcR_DQYpmUhoDzh587BHrfawMIbdbT--ER-z0obPgJkRnN9WVl87frlnxNSkFz64-Znk3LYlcte2_OinNKS2ehZmJrotbr-sFtfcFTAmeGXSZmzx7PnmjgD2kmnZqfbigDVRdF6dvWYFQOWnRFDOMmVPjxm9AYOUKWh9f4GbKGuMkKOldK2-uN73xuW5xoTMN7ZzyzGPPU8ldgYq3izijq2RkLEwfXDYJlIEu2G0YUE3MI_O1qLSM_0W_IOd__9_dC98NqZClooB7pJaU6orIKuDLLMt07AXg7t3_UwAIOq0jPUhpMFQOJGTV-hN2xLKoW6ioaIoaur6QUq-FBfNOBK08_PTcqjeK0NBp-pYCaOIweKIsFNbucGZUT0LCAid9la0PfYjgk3US5b1vMjWuOpMcB005iyHtB0JYronr8qKF-61LccakvTznPCKq3bHzWLjDfz9vhgfywSnLUG2JxeTp17XIr6LNesIi0cyKVHZi2g3JYcM70A1roOeoNG2xXO55ayj3i7Tc9ToU-Ehb7XjcJiZQ-WDN3aEz7HxO-Ff7_oJ_e-LY62UAvxmfL6dCjXsGH7D1Z5BigEayMajY-4dCrkFf9JlqvxFiy6fnm-MVmgZZeQAqdacGYpCXiaFU5CEgWebw6ymUdTN_ktGPiDmKDiHPFXrMn2MIg2USq4z8HjO4v46gFH21DS8woeaZ3lUpNQO5CAM2_tVlJ-euEQZJhunbq8FbIrVm4wZ60wO6mI1LN5qxL22KffQ-GpZ_0UeqPWcTqXGUPHZ6arH1fvVEEvMEvadYlasrLl-9jcDEmWo9gXBN4HlXRUMH0Yq7RmftiMoF4KXHb4mGy5OMBvLkbI_iFSc3PrMVitPaqzenR9GpYrSj_F69Ba5C51CBhSoPf0mmHCA" charset="UTF-8"></script>
+
+        <a href="/">HOME</a><br><br>
+        <a href="/adduser">Add New Student</a><br><br>
+        <a href="/list">List Student</a><br><br>
+        <br><hr>
+
+        {{ msg }}
+
+        <table border = 1>
+            <thead>
+                <td> Email </td>
+                <td> username </td>
+                <td> Roll Number </td>
+                <td> password </td>
+            </thead>
+
+            {% for row in users %} 
+            <tr>
+                <td>{{row["email"]}}</td>
+                <td>{{row["username"]}}</td>
+                <td>{{row["rollnumber"]}}</td>
+                <td>{{row['password']}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
