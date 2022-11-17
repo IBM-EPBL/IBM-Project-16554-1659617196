@@ -1,0 +1,11 @@
+login to ibm cloud
+open catalog
+change the service name to version watson assistant
+press create
+press launch watson assistant
+select assistant
+press create the assistant
+name the assistant as vending assistang and then press create
+select action or dialog select upload skill tab open following link new browser tab select a code and then download zip
+extract the zip file on your location machine and then click import 
+click preview now you can use the assistant
